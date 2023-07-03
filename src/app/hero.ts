@@ -1,4 +1,6 @@
 export interface Hero {
-  id: number;
+  readonly id: number;
   name: string;
+  age?: number;
+  city?: string;
 }

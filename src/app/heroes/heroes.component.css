@@ -5,10 +5,27 @@
   width: 15em;
 }
 
+.heroes .id {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #405061;
+  line-height: 1em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.heroes .name {
+  align-self: center;
+}
+
+
 .heroes li {
   display: flex;
 }
 
+/* Кнопка */
 .heroes button {
   flex: 1;
   cursor: pointer;
@@ -23,43 +40,33 @@
   height: 1.8em;
 }
 
+/* Мишка наведена на кнопку */
 .heroes button:hover {
-  color: #2c3a41;
-  background-color: deepskyblue;
-  left: .1em;
-}
-
-.heroes button:active {
-  background-color: #525252;
-  color: green;
-}
-
-.heroes button.selected {
-  background-color: black;
-  color: purple;
-}
-
-.heroes button.selected:hover {
-  background-color: #505050;
-  color: red;
-}
-
-.heroes button.selected:active {
-  background-color: black;
   color: yellow;
+  background-color: deepskyblue;
+  left: .5em;
 }
 
-.heroes .badge {
-  display: inline-block;
-  font-size: small;
+/* Момент натискання микою на кнопку. Або затиснута мишка на кнопці робить її активною */
+.heroes button:active {
+  color: cyan;
+  background-color: darkred;
+}
+
+/* Кнопка натиснута */
+.heroes button.mySelected {
   color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #405061;
-  line-height: 1em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
+  background-color: darkslategray;
 }
 
-.heroes .name {
-  align-self: center;
+/* Мишка наведена на натиснуту кнопку */
+.heroes button.mySelected:hover {
+  color: red;
+  background-color: black;
+}
+
+/* Затиснута мишка на вибраній кнопці */
+.heroes button.mySelected:active {
+  color: yellow;
+  background-color: green;
 }
