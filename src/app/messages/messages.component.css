@@ -1,0 +1,8 @@
+.clear {
+  background-color: steelblue;
+}
+
+.clear:hover {
+  color: black;
+  background-color: lightblue;
+}
